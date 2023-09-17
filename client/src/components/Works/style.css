@@ -1,0 +1,19 @@
+.cat-head{
+    font-size:48px;
+    font-weight: bolder;
+    font-family: 'DMSerif Display';
+   
+    margin-bottom:3%;
+}
+.work-img{
+    padding-left: 2%;
+    margin-bottom: 3%;
+}
+
+.works{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

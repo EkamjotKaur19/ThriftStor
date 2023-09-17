@@ -1,0 +1,32 @@
+.abt-heads{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban-head{
+    font-size:48px;
+    font-weight: bolder;
+    font-family: 'DMSerif Display';
+    margin-bottom:3%;
+}
+
+.abt-text{
+    font-family: 'DMSerif Display';
+    padding: 6%;
+    font-size: 1.5rem;
+}
+
+.textbox{
+    background-color: rgb(210, 198, 30);
+    padding:3%;
+    font-size: 1.2rem;
+    border-radius: 5%;
+    color: black;
+}
+
+.abt-cont{
+    padding: 5%;
+}

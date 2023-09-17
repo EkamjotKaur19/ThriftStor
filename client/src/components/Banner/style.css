@@ -1,0 +1,41 @@
+
+
+.ban-card{
+    padding:7%;
+    padding-top:0%;
+}
+
+.ban-2-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban-head{
+    font-size:48px;
+    font-weight: bolder;
+    font-family: 'DMSerif Display';
+    margin-bottom:3%;
+}
+
+.ban-img{
+    width:50%;
+    height:60%;
+    margin-bottom: 2%;
+}
+
+.cards{
+    border:2px solid white;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

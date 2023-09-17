@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Condensed&family=Ysabeau+SC:wght@500&display=swap');
+.cat{
+    width: 250px;
+    height:130px;
+    display: inline-block;
+}
+
+.cats{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: centre;
+}
+
+.card-deck{
+    display: flex;
+    flex-direction:row ;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.cat-head{
+    font-size:48px;
+    font-weight: bolder;
+    font-family: 'DMSerif Display';
+   
+    margin-bottom:3%;
+}
+.card{
+    margin: 10px;
+    border: none;
+    outline: none;
+}
