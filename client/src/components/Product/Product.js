@@ -9,7 +9,11 @@ export default function Product() {
       const fetchItems = async () => {
         console.log('ekam');
         try {
-          const response = await itemService.getAllItems();
+          const loggedUserJSON = window.localStorage.getItem('loggeditemappUser');
+          const user = JSON.parse(loggedUserJSON);
+          itemService.setToken(user.token);
+
+          const response = await itemService.getAllExceptMine(user.token); // Pass the token as an argument
           console.log(response);
           setItems(response.data);
         } catch (error) {

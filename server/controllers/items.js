@@ -28,22 +28,27 @@ const getTokenFrom = request => {
 itemsRouter.get('/', (request, response) => {
   
   Item.find({}).then(items => {
-    console.log('get req')
     response.json(items)
   })
 })
 
-itemsRouter.get('/:id', (request, response, next) => {
-  Item.findById(request.params.id)
-    .then(item => {
-      if (item) {
-        response.json(item)
-      } else {
-        response.status(404).end()
-      }
-    })
-    .catch(error => next(error))
-})
+
+itemsRouter.get('/all-except-mine', async (request, response) => {
+  const token = getTokenFrom(request);
+  console.log(token)
+  const decodedToken = jwt.verify(token, 'admin');
+  
+  if (!token || !decodedToken.id) {
+    return response.status(401).json({ error: 'token missing or invalid' });
+  }
+
+  const user = await User.findById(decodedToken.id);
+
+  // Find all items except those posted by the logged-in user
+  const items = await Item.find({ seller: { $ne: user._id } });
+
+  response.json(items);
+});
 
 
 

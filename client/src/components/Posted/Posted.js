@@ -89,7 +89,7 @@ export default function Posted() {
             />
         )): console.log('none')}
       <button onClick={handlePickup} >pick</button>
-        {pick && <Pickup /> }
+        {pick && <Pickup  /> }
       
 
     </div>

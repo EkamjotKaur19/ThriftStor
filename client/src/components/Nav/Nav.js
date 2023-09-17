@@ -13,8 +13,8 @@ const Navbar = () => {
     const handleLogout = () => {
       window.localStorage.removeItem('loggedNoteappUser')
       alert('Logged out')
-      setLoggedIn(!loggedIn)
-      setCook(!cook)
+      setLoggedIn(false)
+      setCook(false)
       console.log(cook)
       navigate('/posted')
     }

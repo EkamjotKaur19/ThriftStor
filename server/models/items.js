@@ -31,7 +31,7 @@ mongoose.connect(url)
     images:String,
     status: {
       type: String,
-      enum: ['not sold', 'interested buyer', 'pickup', 'delivered'],
+      enum: ['not sold', 'interested buyer', 'pickedup', 'delivered'],
       default: 'not sold',
     }
 })

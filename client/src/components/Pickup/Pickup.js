@@ -1,10 +1,13 @@
 import React from 'react'
 import './style.css'
 export default function Pickup() {
+  const handleSubmit = () => {
+    
+  }
   return (
     <>
     <div className="container-create">
-  <form>
+  <form onSubmit={handleSubmit} > 
     <div className="row">
       <h4>Schedule Pickup</h4>
       <div className="input-group input-group-icon">
