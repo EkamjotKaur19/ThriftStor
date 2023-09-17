@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/api/items'
+const baseUrl = 'https://thridtstorebackend.onrender.com/api/items'
 
 let token = null
 const getAllItems =async  () =>{
